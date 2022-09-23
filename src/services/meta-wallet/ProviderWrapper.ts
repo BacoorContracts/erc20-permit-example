@@ -19,10 +19,11 @@ export default class ProviderWrapper implements IProviderWrapper {
     }
 
     async handleConnect(connectInfo?: RPCArguments.ConnectInfo | undefined): Promise<void> {
+        this.provider.send('eth_requestAccounts', []);
         console.log('Connected to', connectInfo)
     }
     handleDisconnect(): Promise<void> {
-        throw new Error("Method not implemented.")
+        console.log("Method not implemented.")
     }
     handleChainChanged(_chainId: string): Promise<void> {
         throw new Error("Method not implemented.")

@@ -36,7 +36,7 @@ export default class Home extends Component<Record<string, any>, Record<any, str
         const domain = {
             name: await paymentToken.name(),
             version: "1",
-            chainId: 97,
+            chainId: 56,
             verifyingContract: paymentToken.address,
         }
 

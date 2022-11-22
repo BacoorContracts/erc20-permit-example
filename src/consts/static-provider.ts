@@ -3,9 +3,9 @@ import { ethers } from "ethers"
 // 2. Define network configurations
 const providerRPC = {
     bsc: {
-        name: "bscTestnet",
-        rpc: "https://data-seed-prebsc-1-s1.binance.org:8545",
-        chainId: 97,
+        name: "bsc",
+        rpc: "https://bsc-dataseed1.binance.org/",
+        chainId: 56,
     },
 }
 // 3. Create ethers provider
